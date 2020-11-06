@@ -40,12 +40,16 @@ export default {
 <style>
 body {
   font-family: Helvetica, sans-serif;
-  color: darkslategray;
+  color: whitesmoke;
   font-size: 1.4em;
+  background-color: black;
+  margin: auto;
+  width: 50%;
 }
-div {
-  font: ;
+h1 {
+  margin-top: 1em;
 }
+
 .complete {
   color: gainsboro;
   text-decoration: line-through;
@@ -61,15 +65,15 @@ input[type="text"] {
   font-size: 0.7em;
 }
 input[type="checkbox"] {
-  position: absolute;
-  right: 0;
   padding: 1em;
   cursor: pointer;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 li {
   list-style-type: none;
   padding: 1em 0 1em 0;
-  border-bottom: 1px solid lightblue;
+  border-bottom: 1px solid lightcoral;
   position: relative;
 }
 li input {
@@ -88,7 +92,7 @@ label {
 }
 .show-completed {
   font-size: 1rem;
-  color: slategray;
+  color: lightgreen;
 }
 .show-completed input {
   transform: scale(1.4);
