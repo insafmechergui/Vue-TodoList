@@ -7,7 +7,7 @@
       Show Completed Items?
       <input type="checkbox" v-model="showDone" />
     </label>
-    <ul v-for="todo in $data.todos.filter(shouldShowTodo)">
+    <ul v-for="todo in $data.todos.filter(shouldShowTodo)" :key="todo">
       <li v-bind:class="{ complete: todo.done }">
         <input type="checkbox" v-model="todo.done" />
         {{ todo.text }}
